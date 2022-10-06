@@ -1,10 +1,15 @@
-import { Button } from "ui";
+import Head from "next/head";
+import { Alert, Button } from "ui";
 
 export default function Web() {
   return (
     <div>
-      <h1>Web</h1>
+      <Head>
+        <title>Web</title>
+      </Head>
+      <h1 className="text-yellow-400">Web</h1>
       <Button />
+      <Alert text="hi" />
     </div>
   );
 }
